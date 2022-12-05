@@ -10,6 +10,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-bg-color: #F5F4FA;
+    --icons-primary-color: #AFB1B8;
 }
 
 body{
@@ -81,6 +82,8 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+display: flex;
+align-items: center;
 }
 
 .link:hover,
@@ -122,6 +125,24 @@ margin-left: auto;
 
 .header-contacts .item + .item{
 margin-left: 50px;
+}
+
+.header-contacts .item{
+    display: flex;
+
+}
+
+.contacts-icon{
+    margin-right: 10px;
+}
+
+.contacts-icon.mail{
+    width: 16px;
+    height: 12px;
+   }
+.contacts-icon.tel{
+    width: 10px;
+    height: 16px;
 }
 
 /*герой*/
@@ -322,18 +343,40 @@ padding-bottom: 30px;
 /*Постійні клієнти*/
 .сlients{
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 82px;
+}
+
+.clients-list{
+    display: flex;
+    gap: 30px;
 }
 
 .сlients-card{
   display: flex;  
-}
+  display: inline-block;
+  width:calc((100% - 5*30px)/6);
+   border: 1px solid var(--icons-primary-color);
+   padding: 16px 32px;
+   border-radius: 4px;
+ }
+
+ .сlients-card:hover,
+ .сlients-card:focus{
+    border: 1px solid var(--accent-color);
+ }
+
 
 .clients-icon{
     width: 106px;
     height: 60px;
-
+    fill: var(--icons-primary-color);
 }
+
+.clients-icon:hover,
+.clients-icon:focus{
+    fill: var(--accent-color);
+}
+
 
 /*підвал*/
 
