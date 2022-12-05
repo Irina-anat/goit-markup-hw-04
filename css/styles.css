@@ -319,6 +319,22 @@ padding-top: 30px;
 padding-bottom: 30px;
 }
 
+/*Постійні клієнти*/
+.сlients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.сlients-card{
+  display: flex;  
+}
+
+.clients-icon{
+    width: 106px;
+    height: 60px;
+
+}
+
 /*підвал*/
 
 .footer{
