@@ -233,7 +233,7 @@ display: flex;
 .specials-icon{
     width: 70px;
     height: 70px;
-    }
+}
 
 /*
 .specials-item:nth-child(2)::before{
@@ -341,6 +341,41 @@ letter-spacing: 0.03em;
 padding-top: 30px;
 padding-bottom: 30px;
 }
+
+.social-list{
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+  margin-right: 32px;
+    gap: 10px;
+}
+.social-card{
+    display: flex;
+}
+
+.social-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+    color: var(--icons-primary-color) ;
+    background-color: #FFFFFF ;  
+    border-radius: 50%;
+}
+
+.social-link:hover{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.social-icon{
+    background-repeat: no-repeat;
+    background-size: contain;
+    fill: currentColor;
+}
+
 
 /*Постійні клієнти*/
 .сlients{
